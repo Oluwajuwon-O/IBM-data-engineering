@@ -20,3 +20,5 @@ def extract_json(file):
 
 def extract_xml(file):
     df = pd.DataFrame(columns=[''])
+    
+def extract()
