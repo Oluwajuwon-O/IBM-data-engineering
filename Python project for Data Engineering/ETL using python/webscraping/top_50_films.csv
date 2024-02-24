@@ -1,4 +1,4 @@
-average_rank,film,year
+Average_Rank,Film,Year
 1,The Godfather,1972
 2,Citizen Kane,1941
 3,Casablanca,1942
@@ -36,7 +36,7 @@ average_rank,film,year
 35,Blade Runner,1982
 36,Double Indemnity,1944
 37,The Dark Knight,2008
-38,"<a href=""/web/20230902185655/https://en.everybodywiki.com/The_Wizard_of_Oz_(1939_film)"" title=""The Wizard of Oz (1939 film)"">The Wizard of Oz</a>",1939
+38,The Wizard of Oz,1939
 39,Star Wars: Episode V- The Empire Strikes Back,1980
 40,The Searchers,1956
 41,Mad Max: Fury Road,2015
