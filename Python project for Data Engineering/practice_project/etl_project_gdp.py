@@ -13,8 +13,10 @@ import pandas as pd
 import sqlite3
 import numpy as np
 from datetime import datetime
+import os
 
 
+    
 def extract(url, table_attribs):
     ''' This function extracts the required
     information from the website and saves it to a dataframe. The
@@ -69,12 +71,16 @@ def run_query(query_statement, sql_connection):
 
 def log_progress(message):
     ''' This function logs the mentioned message at a given stage of the code execution to a log file. Function returns nothing'''
+    # create directory for data files
+    if not os.path.exists('data'):
+        os.makedirs('data')
+        
     time_format = '%Y-%h-%d-%H-%M-%S'
     now = datetime.now()
     timestamp = now.strftime(time_format)
     with open('data\\etl_project_log_file.txt','a') as f:
         f.write(timestamp+' : '+ str(message)+'\n')
-
+    print(message)
 
 # In[3]:
 
